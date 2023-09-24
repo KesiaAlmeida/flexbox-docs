@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +7,336 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Flexbox</h1>
-    <h2>Documentação</h2>
-    <h3>Display: flex</h3>
-    <p class="descricao-propriedade">
-        A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
-    </p>
-    <p class="descricao-propriedade">Algumas propriedades como flex-direction, justify-contet e align-contet ja vem com os valores padrao.</p>
+    <header>
+        <nav class="navbar" id="menu">
+            <h1>Flexbox</h1>
+        </nav>
+        <nav class="subnav">
+            <ul>
+                <li><a href="#flexdirection">flex-direction</a></li>
+                <li><a href="#justifycontent">justify-content</a></li>
+                <li><a href="#alignitens">align-itens</a></li>
+                <li><a href="#flexwrap">flex-wrap</a></li>
+                <li><a href="#flexflow">flex-flow></a></li>
+                <li><a href="#aligncontet">align-content</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Display: Habilita o Flexbox (display: flex)</h2>
+
+    <hr>
+
+    <h2 id="flexdirection">Flex-direction</h2>
+        <p> A propriedade CSS flex-direction define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido). Define a direção dos objetos e eixo principal.</p>
+
+    <h3>Flex-Direction: Row</h3> 
+        <p>O eixo principal do flex container é definido para ser o mesmo que a direção do texto. Os pontos de início e término principais são iguais à direção do conteúdo.</p>
+    <main class="containerRow">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
+
+    <h3>Flex-Direction: row-reverse</h3>
+    <p> Comporta-se da mesma forma que row porém os pontos de início e término serão invertidos (permutados). </p>
+    <main class="containerRowReverse">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
+
+    <h3>Flex-Direction: column</h3>
+        <p>O eixo principal do flex container é igual ao eixo do bloco. Os pontos de início e término principais são iguais aos pontos de antes e depois do modo de escrita.</p>
+    <main class="containerColumn">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
+
+    <h3>Flex-Direction: column-reverse</h3>
+    <p>Se comporta da mesma forma que column porém, os pontos de início e término serão invertidos (permutados).</p>
+    <main class="containerColumnReverse">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
     
-    <!--table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor-->
-    <table>
-        <tr>
-            <th class="propriedade"></th>
-            <th class="valor"></th>
-        </tr>
-    </table>
+    <hr>
 
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <th class="valor">Valor</th>
-        </tr>
+    <h2 id="justifycontent">Justify-Content</h2>
+    <p>A propriedade justify-content é empregada para alinhar os elementos ao longo do eixo principal.</p>
+    
 
+    <h3>justify-content: center</h3>
+    <p></p>
+    <main class="containerJustifyCenter">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
 
-        <tr>
-            <th class="propriedade">flex-direction</th>
-            <th class="valor">row</th>
-        </tr>
+    <h3>justify-content: flex-start</h3>
+    <main class="containerJustifyStart">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
 
-        <tr>
-            <th class="propriedade">justify-contet</th>
-            <th class="valor">flex-start</th>
-        </tr>
+    <h3>justify-content: flex-end</h3>
+    <main class="containerJustifyEnd">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
 
-        <tr>
-            <td class="propriedade">align-contet</td>
-            <td class="valor">flex-start</td>
-        </tr>
-    </table>
+    <h3>justify-content: space-between</h3>
+    <main class="containerJustifySpaceBtw">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
 
-    <p>Exemplo
+    <h3>justify-content: space-around</h3>
+    <main class="containerJustifySpaceArd">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
 
-    </p>
-    <div class="container">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
+    <h3>justify-content: space-evenly</h3>
+    <main class="containerJustifySpaceEvy">
+        <div class="grupo1">1</div>
+        <div class="grupo2">2</div>
+        <div class="grupo3">3</div>
+    </main>
+
+    <hr>
+
+    <h2 id="alignitens"> Align-itens: A propriedade align-items irá alinhar os elementos no eixo transversal.
+
+        O valor inicial desta propriedade é stretch e é por essa razão que, por padrão, os elementos flex se estendem até a maior altura. De fato, eles se esticam para preencher o contêiner flex - o item mais alto define a altura deste.
+        
+        Pode-se definir a propriedade align-items como flex-start, de modo que os elementos fiquem alinhados com topo do contêiner, flex-end para alinhá-los a partir da base ou center, para que o alinhamento seja centralizado.</h2>
+
+        <h3>align-items: center</h3>
+        <main class="containerAlignItemsCenter">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+        </main>
+
+        
+        <h3>align-items: flex-start</h3>
+        <main class="containerAlignItemsStart">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+        </main>
+
+        
+        <h3>align-items: flex-end</h3>
+        <main class="containerAlignItemsEnd">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+        </main>
+
+        
+        <h3>align-items: stretch</h3>
+        <main class="containerAlignItemsStretch">
+            <div class="grupo1noSpace">1</div>
+            <div class="grupo2noSpace">2</div>
+            <div class="grupo3noSpace">3</div>
+        </main>
+
+        <h3>align-items: baseline</h3>
+        <main class="containerAlignItemsBaseline">
+            <div class="grupo1baseline">1</div>
+            <div class="grupo2baseline">2</div>
+            <div class="grupo3baseline">3</div>
+        </main>
+
+        <hr>
+
+        <h2 id="flexwrap"> flex-wrap:Embora o flexbox seja um modelo unidimensional, é possível fazer com que elementos flex sejam agrupados em múltiplas linhas. Ao fazer isso, considera-se cada linha como um novo contêiner flex. Qualquer distribuição espacial ocorrerá ao longo essa linha, sem referência às linhas de ambos os lados. Para gerar a quebra automática das linhas adicione a propriedade flex-wrap com o valor wrap. Assim, se elementos forem muito grandes para serem exibidos em uma única linha, eles serão agrupados em outras linhas. </h2>
+
+        <h3>Flex-wrap: nowrap</h3>
+        <main class="containerFlexWrapNowWrap">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <h3>Flex-wrap: wrap</h3>
+        <main class="containerFlexWrapWrap">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <h3>Flex-wrap: wrap-reverse</h3>
+        <main class="containerFlexWrapWrapReverse">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <hr>
+
+        <h2 id="flexflow">flex-flow: Pode-se combinar as propriedades flex-direction e flex-wrap de forma abreviada através da propriedade flex-flow. O primeiro valor especificado é o flex-direction e o segundo valor é o flex-wrap. </h2>
+
+        
+        <h3>Flex-flow: row nowrap</h3>
+        <main class="containerFlexFlowRowNoWrap">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <hr>
+
+        <h2 id="alignContent">Align-content: A propriedade CSS align-content define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma flexbox ou do eixo de bloco de uma grid.</h2>
+
+        <h3>align-content: center</h3>
+        <main class="containerAlignContentCenter">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <h3>align-content: flex-start</h3>
+        <main class="containerAlignContentFlexStart">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <h3>align-content: flex-end</h3>
+        <main class="containerAlignContentFlexEnd">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <h3>align-content: space-around</h3>
+        <main class="containerAlignContentSpaceAround">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        
+        <h3>align-content: space-between</h3>
+        <main class="containerAlignContentSpaceBetween">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        
+        <h3>align-content: space-evenly</h3>
+        <main class="containerAlignContentSpaceEvenly">
+            <div class="grupo1">1</div>
+            <div class="grupo2">2</div>
+            <div class="grupo3">3</div>
+            <div class="grupo1">4</div>
+            <div class="grupo2">5</div>
+            <div class="grupo3">6</div>
+            <div class="grupo1">7</div>
+            <div class="grupo2">8</div>
+            <div class="grupo3">9</div>
+            <div class="grupo1">10</div>
+            <div class="grupo2">11</div>
+            <div class="grupo3">12</div>
+        </main>
+
+        <div class="button"><button id="upBtn"><a href="#menu"><span class="material-symbols-outlined">Inicio</span></a><button></div>
+
+     <footer>
+        <div class="footer">
+
+        </div>
+     </footer>    
 </body>
 </html>
