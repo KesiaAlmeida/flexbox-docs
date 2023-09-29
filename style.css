@@ -179,7 +179,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0) green blue\ ;
 }
 
 .grupo1baseline {
@@ -192,26 +192,25 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(158, 154, 154)
 }
 
-.grupo2nobaseline {
+.grupo2baseline {
     background-color: darkgrey;
-    height: 150px;
+    height: 80px;
     width: 150px;
-    text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-family:'Courier New', Courier, monospace;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(143, 125, 125);
 }
 
-.grupo3nobaseline {
+.grupo3baseline {
     background-color: grey;
-    height: 150px;
+    height: 111px;
     width: 150px;
     text-align: center;
     font-size: 100px;
@@ -220,7 +219,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(143, 125, 125);
 }
 
 .containerRow{
