@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-
+    
 }
 body p,
 h2,
@@ -18,7 +18,7 @@ body h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: xx-large;
-
+    
 }
 
 body h2 {
@@ -35,15 +35,15 @@ body h3 {
 
 #alert {
     font-family: 'Times New Roman', Times, serif;
-    color: brown;
+    color: rgb(10, 10, 10);
 }
 
 .navbar {
-    background-color: black;
+    background-color: rgb(14, 13, 13);
     padding: 0,1%;
     text-align: center;
     margin: auto;
-
+    
     /*position: fixed;
     width: 100vw;
     top: 0; */
@@ -51,7 +51,7 @@ body h3 {
 
 .navbar h1 {
     text-decoration: overline underline;
-    color: white;
+    color: rgb(167, 13, 13);
 }
 
 .subnav {
@@ -92,7 +92,7 @@ body h3 {
     width: 50px;
     border-radius: 20px;
     border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.308) green, blue, alpha);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.308) 
     margin: 3vw;
     float: :right
 }
@@ -113,7 +113,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, o); 
 }
 
 .grupo2 {
@@ -127,7 +127,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, o);
 }
 
 .grupo3 {
@@ -141,7 +141,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, o); 
 }
 
 .grupo1noSpace {
@@ -153,7 +153,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, o); 
 }
 
 .grupo2noSpace {
@@ -166,7 +166,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, o); green, blue);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, o);
 }
 
 .grupo3noSpace {
@@ -179,7 +179,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0) green blue\ ;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0)
 }
 
 .grupo1baseline {
@@ -192,7 +192,7 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(158, 154, 154)
+    box-shadow: 0 4px 8px 0 rgb(158, 154, 154);
 }
 
 .grupo2baseline {
@@ -221,7 +221,23 @@ body h3 {
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgb(143, 125, 125);
 }
-
+.containerAlignItemsBaseline {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.containerAlignContentSpaceEvenly {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
 .containerRow{
     background-color: rgb(39, 39, 39);
     padding: 16px;
@@ -229,6 +245,7 @@ body h3 {
     display: flex;
     flex-direction: row;
 }
+
 
 .containerRowReverse {
     background-color: rgb(39, 39, 39);
@@ -348,15 +365,6 @@ body h3 {
     align-items: stretch;
 }
 
-.containerAlignItemsBaseline {
-    background-color: rgb(39, 39, 39);
-    padding: 16px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-}
 
 .containerFlexWrapNowWrap {
     background-color: rgb(39, 39, 39);
@@ -447,24 +455,16 @@ body h3 {
     align-content: space-between;
 }
 
-.containerAlignContentSpaceEvenly {
-    background-color: rgb(39, 39, 39);
-    padding: 16px;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-}
 
 .footer {
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     padding: 0.1%;
     text-align: center;
     margin: auto;
     margin-top: 10vw;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-small;
-    color: white;
+    color: rgb(179, 163, 163);
     height: 10vw;
     display: flex;
     flex-direction: row;
