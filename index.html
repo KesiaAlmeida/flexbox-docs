@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexbox</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
         </nav>
     </header>
     <h2>Display:Display Flex</h2>
-    <p>Habilita o flexbox.Por muito tempo, as únicas ferramentas disponíveis para criar leiautes em CSS e posicionar elementos com boa compatibilidade entre browsers eram float e position. Porém, essas ferramentas possuem algumas limitações muito frustrantes, especialmente no que diz respeito à responsividade. <p>Algumas tarefas que consideramos básicas em um leiaute, como centralização vertical de um elemento-filho com relação a um elemento-pai ou fazer com que elementos-filhos ocupem a mesma quantidade de espaço, ou colunas terem o mesmo tamanho independente da quantidade de conteúdo interno, eram impossíveis ou muito difíceis de serem manejadas com floats ou position, ao menos de forma prática e flexível.<p>O Flexbox é um módulo completo e não uma única propriedade; algumas delas devem ser declaradas no container (o elemento-pai, que chamamos de flex container), enquanto outras devem ser declaradas nos elementos-filhos (os flex itens).
+    <p>O Flexbox é uma técnica de layout flexível que permite que os elementos sejam organizados de forma adaptável, fornece estrutura flexvel para o layout e permite também que os elementos sejam organizados de forma a adaptar a diferentes tamanhos de tela cpmo alteração de tamanhos de elementos e espaçamentos.. <p>Algumas tarefas que consideramos básicas em um leiaute, como centralização vertical de um elemento-filho com relação a um elemento-pai ou fazer com que elementos-filhos ocupem a mesma quantidade de espaço, ou colunas terem o mesmo tamanho independente da quantidade de conteúdo interno, eram impossíveis ou muito difíceis de serem manejadas com floats ou position, ao menos de forma prática e flexível.<p>O Flexbox é um módulo completo e não uma única propriedade; algumas delas devem ser declaradas no container (o elemento-pai, que chamamos de flex container), enquanto outras devem ser declaradas nos elementos-filhos (os flex itens).
 
         A ferramenta Flexbox (de Flexible Box) foi criada para tornar essas tarefas mais simples e funcionais: os filhos de um elemento com Flexbox podem se posicionar em qualquer direção e pode ter dimensões flexíveis para se adaptar.
         
@@ -123,11 +123,11 @@
 
     <hr>
 
-    <h2 id="alignitems"> Align-items: A propriedade align-items irá alinhar os elementos no eixo transversal.
-
+    <h3 id="alignitems"> Align-items:</h3><p>A propriedade align-items irá alinhar os elementos no eixo transversal.
+    
         O valor inicial desta propriedade é stretch e é por essa razão que, por padrão, os elementos flex se estendem até a maior altura. De fato, eles se esticam para preencher o contêiner flex - o item mais alto define a altura deste.
         
-        Pode-se definir a propriedade align-items como flex-start, de modo que os elementos fiquem alinhados com topo do contêiner, flex-end para alinhá-los a partir da base ou center, para que o alinhamento seja centralizado.</h2>
+        Pode-se definir a propriedade align-items como flex-start, de modo que os elementos fiquem alinhados com topo do contêiner.<p> O flex-end para alinhá-los a partir da base ou center, para que o alinhamento seja centralizado.</p>
 
         <h3>align-items: center</h3>
         <p>O valor alinha os itens flexíveis no meio do recipiente.</p>
@@ -176,7 +176,7 @@
 
         <hr>
 
-        <h2 id="flexwrap"> flex-wrap:Embora o flexbox seja um modelo unidimensional, é possível fazer com que elementos flex sejam agrupados em múltiplas linhas. Ao fazer isso, considera-se cada linha como um novo contêiner flex. Qualquer distribuição espacial ocorrerá ao longo essa linha, sem referência às linhas de ambos os lados. Para gerar a quebra automática das linhas adicione a propriedade flex-wrap com o valor wrap. Assim, se elementos forem muito grandes para serem exibidos em uma única linha, eles serão agrupados em outras linhas. </h2>
+        <h3> flexwrap: flex-wrap</h3><p>Embora o flexbox seja um modelo unidimensional, é possível fazer com que elementos flex sejam agrupados em múltiplas linhas. Ao fazer isso, considera-se cada linha como um novo contêiner flex. Qualquer distribuição espacial ocorrerá ao longo essa linha, sem referência às linhas de ambos os lados.</p><p> Para gerar a quebra automática das linhas adicione a propriedade flex-wrap com o valor wrap. Assim, se elementos forem muito grandes para serem exibidos em uma única linha, eles serão agrupados em outras linhas. </p>
 
         <h3>Flex-wrap: nowrap</h3>
         <p>O valor especifica que os itens flexíveis não serão quebrados (isso é padrão).</p>
@@ -235,7 +235,7 @@
 
         
         <h3>Flex-flow: row nowrap</h3>
-        <p>A propriedade é uma propriedade abreviada para definir as propriedades e .flex-flow flex-directionflex-wrap.</p>
+        <p>A propriedade é uma propriedade abreviada para definir as propriedades e flex-flow flex-direction-flex-wrap.</p>
         <main class="containerFlexFlowRowNoWrap">
             <div class="grupo1">1</div>
             <div class="grupo2">2</div>
@@ -272,7 +272,7 @@
         </main>
 
         <h3>align-content: flex-start</h3>
-        <p>Os itens são embalados nivelados uns aos outros contra a borda inicial do recipiente de alinhamento no eixo transversal.</p>
+        <p>Flex-start, alinha os itens dentro do container, do inicio para o fim.</p>
         <main class="containerAlignContentFlexStart">
             <div class="grupo1">1</div>
             <div class="grupo2">2</div>
@@ -289,7 +289,7 @@
         </main>
 
         <h3>align-content: flex-end</h3>
-        <p>Os itens são embalados nivelados uns aos outros contra a borda final do recipiente de alinhamento no eixo transversal.</p>
+        <p>Flex-end, alinha os itens dentro do container, do fim para o inicio.</p>
         <main class="containerAlignContentFlexEnd">
             <div class="grupo1">1</div>
             <div class="grupo2">2</div>
@@ -306,7 +306,7 @@
         </main>
 
         <h3>align-content: space-around</h3>
-        <p></p>
+        <p>Space-around, mantém os espaços iguais ao redor dos itens.</p>
         <main class="containerAlignContentSpaceAround">
             <div class="grupo1">1</div>
             <div class="grupo2">2</div>
@@ -324,6 +324,7 @@
 
         
         <h3>align-content: space-between</h3>
+        <p>space-between, mantém os espaços iguais entre todos os itens.</p>
         <main class="containerAlignContentSpaceBetween">
             <div class="grupo1">1</div>
             <div class="grupo2">2</div>
@@ -341,6 +342,7 @@
 
         
         <h3>align-content: space-evenly</h3>
+        <p>Space-evenly, mantém todos os espaços igualmente distribuídos</p>
         <main class="containerAlignContentSpaceEvenly">
             <div class="grupo1">1</div>
             <div class="grupo2">2</div>
@@ -360,6 +362,10 @@
 
      <footer>
         <div class="footer">
+            Link para o <a href="https://github.com/KesiaAlmeida"<>meu GitHub"</a>
+            
+            <p>&copy; corporate, Desenvolvido por Késia Almeida</p>
+            
 
         </div>
      </footer>    
